@@ -1,0 +1,18 @@
+[
+  {
+    "id": "REG-2026-8819",
+    "event_id": "EVT-2026-001",
+    "user_id": "USR-STU-01",
+    "student_name": "Campus Student",
+    "student_id": "R210001",
+    "email": "student@rguktrkv.ac.in",
+    "department": "Computer Science & Engineering",
+    "year": "E3",
+    "phone": "+91 81234 00001",
+    "team_name": "ByteWizards",
+    "team_members": "Team Lead & Members",
+    "ticket_code": "RKV-EVT1-BYTE-8819",
+    "check_in_status": "not_checked_in",
+    "registered_at": "2026-11-03T14:32:00"
+  }
+]

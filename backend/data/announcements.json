@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ANN-001",
+    "title": "ABHIYAAN 2026 Registrations Live!",
+    "content": "Undergraduate batches and PUC students can now register for the National Hackathon. High-speed LAN, refreshments and mentor assistance will be provided at SAC.",
+    "priority": "urgent",
+    "issued_by": "Dean of Student Affairs",
+    "created_at": "2026-11-03T10:00:00"
+  },
+  {
+    "id": "ANN-002",
+    "title": "Robotics Bot Weight Check Notice",
+    "content": "All combat bots for ElectroBlitz must undergo physical screening at Mechanical Workshop Bay on Nov 19 at 9:30 AM.",
+    "priority": "info",
+    "issued_by": "Robotics Club Coordinator",
+    "created_at": "2026-11-04T08:30:00"
+  }
+]

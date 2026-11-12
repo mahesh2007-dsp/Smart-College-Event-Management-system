@@ -1,0 +1,48 @@
+erDiagram
+  VENUES ||--o{ EVENTS : "hosts"
+  USERS ||--o{ EVENTS : "coordinates (schema.sql)"
+  EVENTS ||--o{ REGISTRATIONS : "receives"
+  USERS ||--o{ REGISTRATIONS : "submits"
+  EVENTS ||--o{ EVENT_FEEDBACK : "collects (schema.sql)"
+  USERS ||--o{ EVENT_FEEDBACK : "writes (schema.sql)"
+  VENUES {
+    string id PK
+    string name
+    string short_code UK
+    int capacity
+    string location
+  }
+  USERS {
+    string id PK
+    string email UK
+    string rgukt_id UK
+    string role
+    string department
+    string phone
+  }
+  EVENTS {
+    string id PK
+    string title
+    string category
+    string venue_id FK
+    string coordinator_id FK
+    int capacity
+    int registered_count
+    string entry_fee
+  }
+  REGISTRATIONS {
+    string id PK
+    string event_id FK
+    string user_id FK
+    string student_id
+    string ticket_code UK
+    string payment_status
+    string transaction_id
+    string check_in_status
+  }
+  ANNOUNCEMENTS {
+    string id PK
+    string title
+    string priority
+    string issued_by
+  }

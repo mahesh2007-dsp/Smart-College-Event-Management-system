@@ -1,0 +1,7 @@
+flowchart LR
+  U["Users: Student / Coordinator / Dean Admin"] --> FE["Frontend Tier: React 18 + Vite + Tailwind CSS\n(Pages, Modals, qrcode, HTML5 Canvas)"]
+  FE -->|"HTTP REST JSON (/api/*)"| BE["Backend Tier: Node.js + Express 4 (:5000)\nAuth, Events, Registrations, Tickets, Proxy"]
+  BE -->|"File I/O (fs JSON)"| DB["Active Storage: backend/db.js\n(users, venues, events, registrations, announcements .json)"]
+  BE -->|"HTTP POST (/api/ai/*)"| AI["Python AI Microservice (:5001)\nhttp.server (Recommender, SHA-256 Cert, Sentiment NLP)"]
+  BE -.->|"Graceful Fallback if :5001 offline"| JSFB["In-Process JS AI & Crypto Fallback"]
+  DB -.->|"Designed Cloud Schema (Not Yet Wired)"| SUP["PostgreSQL / Supabase (database/schema.sql)"]

@@ -1,0 +1,6 @@
+flowchart LR
+  W1["1. Coordinator Hosts Event\nPOST /api/events"] --> W2["2. Dean Conflict Guard & Notice\nAdminDashboard Overlap + POST /api/announcements"]
+  W2 --> W3["3. Student Discovery & AI Match\nEventsDiscovery + Python /api/ai/recommend"]
+  W3 --> W4["4. Registration & UTR Payment\nPOST /api/registrations (ID + UTR Checks)"]
+  W4 --> W5["5. QR Ticket & Gate Check-In\nQRCode E-Pass -> POST /api/registrations/verify"]
+  W5 --> W6["6. Verified E-Certificate & Audit\nSHA-256 Canvas PNG + Coordinator/Dean CSV Export"]

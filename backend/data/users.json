@@ -1,0 +1,45 @@
+[
+  {
+    "id": "USR-ADM-01",
+    "email": "admin@rguktrkv.ac.in",
+    "password": "admin",
+    "full_name": "Dr. Faculty Admin",
+    "role": "admin",
+    "rgukt_id": "FACULTY-01",
+    "department": "Dean Student Affairs",
+    "year": "Faculty",
+    "phone": "+91 94401 00001",
+    "hostel": "Faculty Quarters",
+    "club_name": "Administration",
+    "avatar_url": "https://api.dicebear.com/7.x/bottts/svg?seed=Admin",
+    "updated_at": "2026-11-04T11:05:11.420Z"
+  },
+  {
+    "id": "USR-COO-01",
+    "email": "coordinator@rguktrkv.ac.in",
+    "password": "coordinator",
+    "full_name": "Campus Event Coordinator",
+    "role": "coordinator",
+    "rgukt_id": "COORD-01",
+    "department": "Computer Science & Engineering",
+    "year": "E4",
+    "phone": "+91 98480 00001",
+    "hostel": "BH-1",
+    "club_name": "Coding & Innovation Club",
+    "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Coordinator"
+  },
+  {
+    "id": "USR-STU-01",
+    "email": "student@rguktrkv.ac.in",
+    "password": "student",
+    "full_name": "Campus Student",
+    "role": "student",
+    "rgukt_id": "R210001",
+    "department": "Computer Science & Engineering",
+    "year": "E3",
+    "phone": "+91 81234 00001",
+    "hostel": "BH-2, Room 314",
+    "club_name": null,
+    "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Student"
+  }
+]

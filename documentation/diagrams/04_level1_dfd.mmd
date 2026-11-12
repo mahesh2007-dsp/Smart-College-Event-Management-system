@@ -1,0 +1,20 @@
+flowchart TB
+  STU["Student"] -->|"Login/Signup Data"| P1(("1.0\nAuth & Profile"))
+  P1 <--> D1[("D1: users.json")]
+  STU -->|"Browse/Search"| P2(("2.0\nEvent & Venue Mgmt"))
+  COO["Coordinator"] -->|"Create/Delete Event"| P2
+  P2 <--> D2[("D2: venues.json")]
+  P2 <--> D3[("D3: events.json")]
+  STU -->|"Reg Form + UTR"| P3(("3.0\nRegistration & Payment"))
+  P3 <--> D3
+  P3 <--> D4[("D4: registrations.json")]
+  P3 -->|"Ticket Code + QR"| STU
+  COO -->|"Scanned Code"| P4(("4.0\nGate QR Verification"))
+  P4 <--> D4
+  STU -->|"Branch & Interests"| P5(("5.0\nAI & Certificate Engine"))
+  P5 <--> D3
+  P5 -->|"Matched Events & Digest"| STU
+  ADM["Dean Admin"] -->|"Notice Broadcast"| P6(("6.0\nAdmin Audit & Notices"))
+  P6 <--> D5[("D5: announcements.json")]
+  P6 <--> D4
+  P6 <--> D3

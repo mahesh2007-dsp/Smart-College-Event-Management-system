@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  smart-cems:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rgukt-smart-cems
+    ports:
+      - "${PORT:-5000}:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - PYTHON_AI_URL=http://localhost:5001
+      # Optional: set these to connect to Supabase Cloud PostgreSQL
+      # - SUPABASE_URL=https://your-project.supabase.co
+      # - SUPABASE_ANON_KEY=your-anon-key
+    restart: unless-stopped
+    volumes:
+      - cems-data:/app/backend/data
+
+volumes:
+  cems-data:

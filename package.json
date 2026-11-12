@@ -1,0 +1,25 @@
+{
+  "name": "smart-college-event-management-system",
+  "version": "1.0.0",
+  "description": "Smart College Event Management System (Smart CEMS) for RGUKT IIIT RK Valley with React, Node.js, SQL, Supabase and Python AI Service",
+  "scripts": {
+    "start": "bash run.sh",
+    "start:prod": "bash start-prod.sh",
+    "server": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "python": "python3 python-service/app.py",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "sql",
+    "supabase",
+    "python",
+    "event-management",
+    "rgukt",
+    "iiit-rkvalley"
+  ],
+  "author": "RGUKT RK Valley CSE Department",
+  "license": "MIT"
+}

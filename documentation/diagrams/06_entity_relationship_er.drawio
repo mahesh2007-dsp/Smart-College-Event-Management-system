@@ -1,0 +1,17 @@
+<mxfile host="app.diagrams.net" agent="SmartCEMS-DocGen" version="24.0"><diagram id="06_entity_relationship_er" name="Entity Relationship Diagram"><mxGraphModel dx="1280" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" pageWidth="1280" pageHeight="760"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="v" value="VENUES
+PK: id
+UK: short_code
+name, capacity, location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="60" y="90" width="240" height="140" as="geometry"/></mxCell><mxCell id="u" value="USERS
+PK: id
+UK: email, rgukt_id
+role, full_name, dept, phone" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="60" y="420" width="240" height="150" as="geometry"/></mxCell><mxCell id="e" value="EVENTS
+PK: id
+FK: venue_id, coordinator_id
+title, category, capacity, entry_fee" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="450" y="140" width="270" height="190" as="geometry"/></mxCell><mxCell id="r" value="REGISTRATIONS
+PK: id | UK: ticket_code
+FK: event_id, user_id
+payment_status, transaction_id, check_in_status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="450" y="410" width="290" height="190" as="geometry"/></mxCell><mxCell id="a" value="ANNOUNCEMENTS
+PK: id
+title, content, priority, issued_by" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="880" y="120" width="260" height="130" as="geometry"/></mxCell><mxCell id="f" value="EVENT_FEEDBACK (SQL Only)
+PK: id | FK: event_id, user_id
+rating, comment, sentiment_label" style="rounded=1;dashed=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="880" y="410" width="270" height="150" as="geometry"/></mxCell><mxCell id="e_200" value="1 : N hosts" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v" target="e"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e_201" value="1 : N coordinates" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="u" target="e"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e_202" value="1 : N receives" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e" target="r"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e_203" value="1 : N submits" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="u" target="r"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e_204" value="1 : N (schema.sql)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e" target="f"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e_205" value="1 : N (schema.sql)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="u" target="f"><mxGeometry relative="1" as="geometry"/></mxCell></root></mxGraphModel></diagram></mxfile>

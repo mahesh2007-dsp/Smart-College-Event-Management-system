@@ -1,0 +1,15 @@
+flowchart TD
+  ST(("Start")) --> A["Click 'Register' on Event Card"]
+  A --> D1{"User Signed In?"}
+  D1 -- No --> AUTH["Open AuthModal (Sign In / Create Account)"] --> A
+  D1 -- Yes --> F["Open EventRegisterModal (Reset & Prefill User)"]
+  F --> V1["Validate Name, RGUKT ID [ROSN]6, Email, Phone"]
+  V1 --> D2{"Paid Event?"}
+  D2 -- Free --> SUB["POST /api/registrations"]
+  D2 -- Paid --> D3{"Payment Mode?"}
+  D3 -- "Cash at Desk" --> SUB
+  D3 -- "UPI / SBI" --> UTR["Validate 12-Digit UTR / Bank Ref"] --> SUB
+  SUB --> D4{"Capacity Open & Not Duplicate?"}
+  D4 -- No --> ERR["Display HTTP 400 Error Banner"] --> F
+  D4 -- Yes --> TKT["Create Ticket Code & Increment Count"]
+  TKT --> QR["Launch Confetti & Display QR TicketPassModal"] --> EN(("End"))

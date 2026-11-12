@@ -1,0 +1,20 @@
+sequenceDiagram
+  autonumber
+  actor S as Student
+  participant UI as EventRegisterModal.jsx
+  participant API as api.js / Express :5000
+  participant DB as backend/db.js
+  participant TKT as TicketPassModal.jsx
+  S->>UI: Fill Student ID, Phone, UTR & Submit
+  UI->>UI: Validate /[ROSN]\d{6}/, phone, UTR
+  UI->>API: POST /api/registrations (Bearer user.id)
+  API->>API: Verify ID regex & UTR >= 8 chars (if paid)
+  API->>DB: getEventById(event_id)
+  DB-->>API: Event metadata & capacity
+  API->>DB: createRegistration(payload)
+  DB->>DB: Check duplicate & increment registered_count
+  DB-->>API: Created Registration (ticket_code)
+  API-->>UI: HTTP 201 JSON Registration
+  UI->>TKT: Pass registration + event props
+  TKT->>TKT: QRCode.toDataURL(ticket_code)
+  TKT-->>S: Display QR E-Ticket & Printable Pass

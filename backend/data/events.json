@@ -1,0 +1,217 @@
+[
+  {
+    "id": "EVT-2026-001",
+    "title": "Abhiyaan 2026: 24-Hour National Hackathon",
+    "tagline": "Build the Next Generation of AI & Web Innovations",
+    "category": "Technical",
+    "department": "Computer Science & Engineering",
+    "club_name": "Coding & Innovation Club",
+    "venue_id": "v1",
+    "venue_name": "SAC Main Auditorium & Labs",
+    "start_date": "2026-11-18T09:00:00",
+    "end_date": "2026-11-19T10:00:00",
+    "registration_deadline": "2026-11-16T23:59:00",
+    "capacity": 300,
+    "registered_count": 184,
+    "team_type": "Team (2-4 Members)",
+    "entry_fee": "Free",
+    "prize_pool": "₹50,000 Cash + Cloud Credits",
+    "description": "The flagship hackathon of RGUKT IIIT RK Valley. Build web, mobile and AI applications solving regional agricultural, educational, and healthcare problems.",
+    "rules": [
+      "Valid RGUKT ID mandatory",
+      "Build during 24h hackathon period",
+      "Open-source code submission on GitHub"
+    ],
+    "schedule": [
+      {
+        "time": "Day 1 - 09:00 AM",
+        "activity": "Opening Keynote"
+      },
+      {
+        "time": "Day 1 - 10:00 AM",
+        "activity": "Problem Statements Released"
+      },
+      {
+        "time": "Day 2 - 09:00 AM",
+        "activity": "Final Project Demos"
+      }
+    ],
+    "image_url": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
+    "status": "approved",
+    "coordinator_name": "B. Tejaswi (CSE E4)",
+    "coordinator_phone": "+91 98480 12345",
+    "coordinator_email": "tejaswi.coord@rguktrkv.ac.in",
+    "faculty_advisor": "Dr. Suresh Kumar (HOD CSE)"
+  },
+  {
+    "id": "EVT-2026-002",
+    "title": "Sanskriti 2026: Cultural Fiesta & Battle of Bands",
+    "tagline": "Rhythm, Drama & Soulful Harmonies under the Stars",
+    "category": "Cultural",
+    "department": "All Branches",
+    "club_name": "Cultural Arts Society",
+    "venue_id": "v2",
+    "venue_name": "Open Air Theatre (OAT)",
+    "start_date": "2026-11-21T17:30:00",
+    "end_date": "2026-11-21T23:00:00",
+    "registration_deadline": "2026-11-19T18:00:00",
+    "capacity": 4000,
+    "registered_count": 1420,
+    "team_type": "Solo & Group",
+    "entry_fee": "Free",
+    "prize_pool": "Trophies + ₹25,000",
+    "description": "Experience electrifying musical concerts, Indian folk & western dance showdowns, and theatrical drama in the Open Air Theatre.",
+    "rules": [
+      "Audio tracks submitted 24h prior",
+      "Group dance limit 6 mins",
+      "Band limit 15 mins"
+    ],
+    "schedule": [
+      {
+        "time": "05:30 PM",
+        "activity": "Invocation & Classical Series"
+      },
+      {
+        "time": "07:30 PM",
+        "activity": "Battle of the Bands"
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "Star Night"
+      }
+    ],
+    "image_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800",
+    "status": "approved",
+    "coordinator_name": "M. Sai Krishna (ECE E4)",
+    "coordinator_phone": "+91 97000 54321",
+    "coordinator_email": "cultural.lead@rguktrkv.ac.in",
+    "faculty_advisor": "Dr. Padmaja (Faculty Incharge)"
+  },
+  {
+    "id": "EVT-2026-003",
+    "title": "RGUKT Premier League (RPL) 2026",
+    "tagline": "Inter-Departmental T20 Cricket Tournament",
+    "category": "Sports",
+    "department": "Physical Education Dept",
+    "club_name": "Sports Council",
+    "venue_id": "v6",
+    "venue_name": "Main University Sports Ground",
+    "start_date": "2026-11-25T08:00:00",
+    "end_date": "2026-11-28T18:00:00",
+    "registration_deadline": "2026-11-22T20:00:00",
+    "capacity": 3000,
+    "registered_count": 420,
+    "team_type": "Department Team",
+    "entry_fee": "Free",
+    "prize_pool": "RPL Trophy + Gold Medals",
+    "description": "8 engineering departments compete in 10-over league matches under floodlights.",
+    "rules": [
+      "Department official team only",
+      "Uniform jerseys required",
+      "ICC T20 rules applied"
+    ],
+    "schedule": [
+      {
+        "time": "Day 1 - 08:00 AM",
+        "activity": "CSE vs ECE"
+      },
+      {
+        "time": "Day 2 - 02:00 PM",
+        "activity": "Quarter Finals"
+      },
+      {
+        "time": "Day 4 - 05:00 PM",
+        "activity": "Grand Finale"
+      }
+    ],
+    "image_url": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800",
+    "status": "approved",
+    "coordinator_name": "P. Divya Reddy (Mech E4)",
+    "coordinator_phone": "+91 99887 76655",
+    "coordinator_email": "sports.sec@rguktrkv.ac.in",
+    "faculty_advisor": "Mr. Ramesh (Physical Director)"
+  },
+  {
+    "id": "EVT-2026-004",
+    "title": "Cybersurge: Capture The Flag (CTF) Arena",
+    "tagline": "Reverse Engineering & Ethical Hacking Challenge",
+    "category": "Technical",
+    "department": "Computer Science & Engineering",
+    "club_name": "Cybersecurity Student Club",
+    "venue_id": "v3",
+    "venue_name": "SAC Computer Labs (Lab 1)",
+    "start_date": "2026-11-20T14:00:00",
+    "end_date": "2026-11-20T20:00:00",
+    "registration_deadline": "2026-11-19T23:59:00",
+    "capacity": 120,
+    "registered_count": 92,
+    "team_type": "Solo or Duo (1-2)",
+    "entry_fee": "Free",
+    "prize_pool": "₹15,000 Cash + Certificates",
+    "description": "Competitive jeopardy-style cybersecurity challenges covering web exploitation, forensics, cryptography, and binary analysis.",
+    "rules": [
+      "No attacks on contest infrastructure",
+      "Individual VPN access required",
+      "No sharing flags between teams"
+    ],
+    "schedule": [
+      {
+        "time": "02:00 PM",
+        "activity": "VPN Access Briefing"
+      },
+      {
+        "time": "02:30 PM",
+        "activity": "Flags Open"
+      },
+      {
+        "time": "07:30 PM",
+        "activity": "Scoring Closes"
+      }
+    ],
+    "image_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800",
+    "status": "approved",
+    "coordinator_name": "K. Vamsi (CSE E3)",
+    "coordinator_phone": "+91 98490 22334",
+    "coordinator_email": "vamsi.ctf@rguktrkv.ac.in",
+    "faculty_advisor": "Dr. K. Srinivas Rao"
+  },
+  {
+    "id": "EVT-2026-005",
+    "title": "Generative AI & LLM Systems Masterclass",
+    "tagline": "Building Autonomous AI Workflows with Gemini & Python",
+    "category": "Workshops",
+    "department": "Computer Science & Engineering",
+    "club_name": "AI/ML Developers Club",
+    "venue_id": "v4",
+    "venue_name": "CSE Department Seminar Hall",
+    "start_date": "2026-11-22T10:00:00",
+    "end_date": "2026-11-22T16:30:00",
+    "registration_deadline": "2026-11-21T18:00:00",
+    "capacity": 150,
+    "registered_count": 145,
+    "team_type": "Individual",
+    "entry_fee": "Free",
+    "prize_pool": "Verified E-Certificate",
+    "description": "Hands-on architectural deep dive into RAG pipelines, autonomous agents, and embedding models with code labs.",
+    "rules": [
+      "Bring personal laptops with Python installed",
+      "Attendance required for certification"
+    ],
+    "schedule": [
+      {
+        "time": "10:00 AM",
+        "activity": "Session 1: LLM Foundations"
+      },
+      {
+        "time": "02:00 PM",
+        "activity": "Session 2: Agent Tools & RAG"
+      }
+    ],
+    "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800",
+    "status": "approved",
+    "coordinator_name": "A. Harshavardhan (CSE E3)",
+    "coordinator_phone": "+91 91234 55667",
+    "coordinator_email": "harsha.ai@rguktrkv.ac.in",
+    "faculty_advisor": "Dr. B. Prasad Rao"
+  }
+]

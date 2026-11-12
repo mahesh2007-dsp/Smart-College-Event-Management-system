@@ -1,0 +1,13 @@
+flowchart LR
+  STU["Student"] -->|"Student Form Data"| P31(("3.1\nValidate ID\n& Phone"))
+  P31 -->|"Verified Profile"| P32(("3.2\nCheck Capacity\n& Duplicate"))
+  D3[("D3: events.json")] <--> P32
+  D4[("D4: registrations.json")] <--> P32
+  P32 -->|"Paid Event?"| P33(("3.3\nValidate UTR\n>= 8 / 12-Digit"))
+  P33 -->|"Confirmed Payload"| P34(("3.4\nGenerate Ticket Code\n& Inc Count"))
+  P34 --> D4
+  P34 --> D3
+  P34 -->|"RKV Ticket + QR"| STU
+  COO["Coordinator"] -->|"Ticket Input"| P41(("4.1\nLookup Ticket\n& Check Lock"))
+  D4 <--> P41
+  P41 -->|"Entry Verdict"| COO

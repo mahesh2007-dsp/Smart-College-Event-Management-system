@@ -1,0 +1,9 @@
+flowchart LR
+  S["Student / Participant"] -->|"Auth Credentials, Registration & UTR Ref, AI Interests"| CEMS(("0.0\nSmart CEMS\nSystem"))
+  CEMS -->|"Event Catalog, QR Entry Pass, SHA-256 E-Certificate, AI Matches"| S
+  C["Event Coordinator"] -->|"Create Event Data, Ticket Scan Code, Export CSV Req"| CEMS
+  CEMS -->|"Gate Verification Status, Payment Ledger, Attendee Roster CSV"| C
+  D["Dean / Faculty Admin"] -->|"Campus Circulars / Notices, Status Updates, Audit Queries"| CEMS
+  CEMS -->|"Venue Conflict Alerts, Financial CSV Audit, Campus Analytics"| D
+  G["Guest Visitor"] -->|"Search / Category / Dept Filter"| CEMS
+  CEMS -->|"Public Event Schedule, Venues, Notice Feed"| G

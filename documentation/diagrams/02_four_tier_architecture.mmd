@@ -1,0 +1,8 @@
+flowchart TB
+  T1["Tier 1: Presentation Tier\nReact 18 SPA, Tailwind CSS, qrcode, Canvas Certificate Renderer"]
+  T2["Tier 2: Application & API Gateway Tier\nNode.js Express (:5000): REST Routes, ID/UTR Validation, Ticket Verification, Fallback"]
+  T3["Tier 3: Intelligence & Cryptography Tier\nPython 3 http.server (:5001): Branch Recommendation Matrix, SHA-256 Digest, Sentiment NLP"]
+  T4["Tier 4: Data Persistence Tier\nActive: JSON File Store (backend/db.js) | Designed Target: PostgreSQL / Supabase SQL"]
+  T1 -->|"REST HTTP JSON"| T2
+  T2 -->|"HTTP Proxy POST"| T3
+  T2 -->|"Sync File I/O"| T4

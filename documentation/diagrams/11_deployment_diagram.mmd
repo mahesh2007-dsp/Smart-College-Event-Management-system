@@ -1,0 +1,16 @@
+flowchart LR
+  subgraph Client["<<device>> User Browser"]
+    SPA["React 18 SPA\n(frontend/dist, qrcode, Canvas 2D)"]
+  end
+  subgraph ServerHost["<<executionEnvironment>> Linux / Docker Container (node:20-slim + python3)"]
+    NODE["<<process>> Node.js Express :5000\n(backend/server.js, start-prod.sh)"]
+    PY["<<process>> Python 3 http.server :5001\n(python-service/app.py)"]
+    DISK["<<storage>> Local Filesystem\n(backend/data/*.json)"]
+  end
+  subgraph OptionalCloud["<<cloud target - Optional / Dormant>>"]
+    SUP["PostgreSQL / Supabase\n(database/schema.sql)"]
+  end
+  SPA -->|"HTTPS / HTTP REST"| NODE
+  NODE -->|"HTTP Loopback :5001"| PY
+  NODE -->|"fs I/O"| DISK
+  NODE -.->|"Planned Migration (SUPABASE_URL)"| SUP

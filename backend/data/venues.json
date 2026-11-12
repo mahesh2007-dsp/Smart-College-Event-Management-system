@@ -1,0 +1,56 @@
+[
+  {
+    "id": "v1",
+    "name": "SAC Main Auditorium",
+    "short_code": "SAC-AUD",
+    "capacity": 1200,
+    "location": "Student Activity Center, Ground Floor",
+    "facilities": "Dolby Acoustic System, Dual 4K Projectors, AC, Stage Green Rooms",
+    "image_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800"
+  },
+  {
+    "id": "v2",
+    "name": "Open Air Theatre (OAT)",
+    "short_code": "OAT-CAMPUS",
+    "capacity": 4500,
+    "location": "Central Campus Quadrangle",
+    "facilities": "Grand Outdoor Stage, Concert Lighting Array, Stepped Amphitheatre Seating",
+    "image_url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800"
+  },
+  {
+    "id": "v3",
+    "name": "SAC Computer Labs (Lab 1 & 2)",
+    "short_code": "SAC-LAB",
+    "capacity": 250,
+    "location": "Student Activity Center, 1st Floor",
+    "facilities": "1Gbps LAN, Dual Monitors, High Specs Workstations, Central UPS",
+    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800"
+  },
+  {
+    "id": "v4",
+    "name": "CSE Department Seminar Hall",
+    "short_code": "CSE-SEM",
+    "capacity": 180,
+    "location": "Academic Block-II, 2nd Floor",
+    "facilities": "Smart Podium, High-Definition Video Rig, Surround Conference Mic",
+    "image_url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800"
+  },
+  {
+    "id": "v5",
+    "name": "Indoor Sports Complex",
+    "short_code": "INDOOR-SPT",
+    "capacity": 600,
+    "location": "South Campus Sports Arena",
+    "facilities": "4 Wooden Badminton Courts, Table Tennis Tables, Viewing Galleries",
+    "image_url": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
+  },
+  {
+    "id": "v6",
+    "name": "Main University Sports Ground",
+    "short_code": "MAIN-GRND",
+    "capacity": 5000,
+    "location": "Near Main Gate Entrance",
+    "facilities": "Turf Cricket Pitch, High-mast Floodlights, Athletic Tracks",
+    "image_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800"
+  }
+]

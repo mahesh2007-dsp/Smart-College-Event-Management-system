@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: rgukt-smart-cems
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: PYTHON_AI_URL
+        value: http://localhost:5001

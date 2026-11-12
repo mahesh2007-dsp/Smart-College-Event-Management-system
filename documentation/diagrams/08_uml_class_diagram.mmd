@@ -1,0 +1,59 @@
+classDiagram
+  class App {
+    -activePage: string
+    -events: Event[]
+    -venues: Venue[]
+    -registrations: Registration[]
+    -currentUser: User
+    +loadData()
+    +handleLogin(id, pwd)
+    +handleRegister(data)
+    +handleEventRegistrationSuccess(payload)
+  }
+  class ApiService {
+    +login(id, pwd)
+    +register(data)
+    +getEvents(filters)
+    +createEvent(data)
+    +registerForEvent(data)
+    +verifyTicket(ticketCode)
+    +getAIRecommendations(dept, interests)
+    +verifyCertificateHash(sid, eid, tkt)
+  }
+  class DataStoreEngine {
+    -DATA_DIR: string
+    +initializeDatabase()
+    +getUsers() / createUser()
+    +getEvents() / createEvent()
+    +createRegistration(data)
+    +verifyTicket(ticketCode)
+    +createAnnouncement(data)
+  }
+  class AIRequestHandler {
+    +do_GET()
+    +do_POST()
+    +handle_recommendation(body)
+    +handle_certificate_verification(body)
+    +handle_sentiment_analysis(body)
+  }
+  class Event {
+    +id: string
+    +title: string
+    +venue_id: string
+    +capacity: int
+    +registered_count: int
+    +entry_fee: string
+  }
+  class Registration {
+    +id: string
+    +event_id: string
+    +student_id: string
+    +ticket_code: string
+    +transaction_id: string
+    +check_in_status: string
+  }
+  App --> ApiService : calls
+  ApiService --> DataStoreEngine : HTTP /api/* via server.js
+  ApiService --> AIRequestHandler : /api/ai/* proxy
+  DataStoreEngine "1" *-- "*" Event
+  DataStoreEngine "1" *-- "*" Registration

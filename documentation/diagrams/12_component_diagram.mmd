@@ -1,0 +1,22 @@
+flowchart LR
+  subgraph FE["<<component>> Frontend SPA"]
+    Pages["Pages: Discovery, Student, Organizer, Admin, Venues, Notices"]
+    Modals["Modals: Auth, Detail, Register+UTR, TicketPass, Cert, AI"]
+    APIJS["api.js REST Client"]
+    Pages --> APIJS
+    Modals --> APIJS
+  end
+  subgraph BE["<<component>> Backend API"]
+    Router["Express Router & AuthMiddleware"]
+    Val["ID & UTR Validator"]
+    Proxy["AI Proxy + Fallback"]
+    DBMod["db.js Storage Engine"]
+    Router --> Val --> DBMod
+    Router --> Proxy
+  end
+  subgraph PY["<<component>> Python Microservice"]
+    AISvc["app.py Recommender, SHA-256, NLP"]
+  end
+  APIJS -->|"REST JSON"| Router
+  Proxy -->|"HTTP JSON"| AISvc
+  DBMod -->|"fs JSON"| Files[("backend/data/*.json")]
