@@ -1,0 +1,22 @@
+{
+  "short_name": "Smart CEMS",
+  "name": "Smart College Event Management System - RGUKT",
+  "description": "Full-stack mobile event management portal, live camera QR gate attendance, and cryptographic certificates for RGUKT IIIT RK Valley.",
+  "icons": [
+    {
+      "src": "/assets/rgukt_logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/rgukt_logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#020617",
+  "theme_color": "#1e3a8a",
+  "display": "standalone",
+  "orientation": "portrait"
+}
